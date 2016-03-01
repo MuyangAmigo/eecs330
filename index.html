@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style2.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+    <link rel='stylesheet prefetch' href='blogcss/ejpeel.css'>
+    <link rel="stylesheet" href="blogcss/blogstyle.css">
+
+	<link rel="stylesheet" href="css/style.css">
+    <!-- Fontastic Icons -->
+    <link href="https://file.myfontastic.com/7jELP97kfbFFHazs8f2iYU/icons.css" rel="stylesheet">
+    <title>Welcome to iTalk</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <style type="text/css">
+    .carousel{
+        background: #2f4357;
+    }
+    .carousel .item img{
+        margin: 0 auto; /* Align slide image horizontally center */
+    }
+    .bs-example{
+      width: 100%;
+    }
+    </style>
+  </head>
+
+<body>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-sm-4">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">iTalk</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+          <li><a class="page-scroll" href="#about">Discover</a></li>
+          <li><a class="page-scroll" href="#services">Topics</a></li>
+        </ul>
+
+      </div> <!-- /.navbar-collapse -->
+    </div> <!-- /.navbar-->
+
+    <div class="col-sm-5" id="search">
+      <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"onclick="window.open('topic1.html')">Search</button>
+          </span>
+        </div><!-- /input-group -->
+    </div><!-- /Search-group -->
+
+    <div id="signin">
+      <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default"><a href="signup.html">Sign Up</a></button>
+        <button type="button" class="btn btn-default"><a href="login.html">Login</a></button>
+      </div>
+      <button type="button" class="btn btn-default"><a href="post.html">Post</a></button>
+    </div> <!-- /.row -->
+    </div> <!-- signin and login-->
+    </div> <!-- /.container -->
+  </nav>
+
+  <!-- Intro Section -->
+  <section id="intro" class="intro-section">
+    <div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="http://asegrad.tufts.edu/sites/default/files/images/programs/GradPrograms_UEPCES.jpg"
+                alt="First Slide">
+                <div class="carousel-caption">
+                  <h1>Management of Community Organizations</h1>
+                  <h3>Providing management training within the framework of the social, economic, and political.</h3>
+                  <button type="button" class="btn btn-success" onclick="window.open('article.html')">Read More</button>
+                </br>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://update.oxfordcym.com/wp-content/uploads/revslider/slider1/4-Training.jpg"
+                alt="Second Slide">
+                <div class="carousel-caption">
+                  <h1>Learn About Oxford CYM</h1>
+                  <h3>Training for Schools, Youth & Children’s Work</h3>
+                  <button type="button" class="btn btn-success" onclick="window.open('article.html')">Read More</button>
+                </br>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.cityofhowell.org/sliderimage/February___Library_and_clock.jpg"
+                alt="">
+                <div class="carousel-caption">
+                <h1>Small City Community Engagement</h1>
+                <h3>City of Howell: An Example</h3>
+                <button type="button" class="btn btn-success" onclick="window.open('article.html')">Read More</button>
+              </br>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+  </section>
+
+  <!-- Article Section -->
+  <section id="about" class="about-section">
+    <div class="container-fluid">
+      <div class="article">
+        <!-- Article Post Row 1-->
+        <div class="row">
+
+          <div class="col-lg-12 page-header">
+            <h3>Most Recent Article</h3>
+          </div>
+          <div class="col-md-6">
+              <div id="blog-card" class="blog-card">
+              	<div class="photo photo1"></div>
+              	<ul class="details">
+              		<li class="author"><a href="#">John Doe</a></li>
+              		<li class="date">Aug. 24, 2015</li>
+              		<li class="tags">
+              			<ul>
+              				<li><a href="#">Tag1</a></li>
+              				<li><a href="#">Tag2</a></li>
+              				<li><a href="#">Tag3</a></li>
+              				<li><a href="#">Tag4</a></li>
+              			</ul>
+              		</li>
+              	</ul>
+              	<div class="description">
+              		<h1>Article Example</h1>
+              		<h2>Opening a door to the future</h2>
+              		<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+              		<a href="article.html">Read More</a>
+              	</div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div id="blog-card" class="blog-card alt">
+                <div class="photo photo2"></div>
+                <ul class="details">
+                  <li class="author"><a href="#">Jane Doe</a></li>
+                  <li class="date">July. 15, 2015</li>
+                  <li class="tags">
+                    <ul>
+                      <li><a href="#">Tag1</a></li>
+                      <li><a href="#">Tag2</a></li>
+                      <li><a href="#">Tag3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="description">
+                  <h1>Another Article Example</h1>
+                  <h2>Java is not the same as JavaScript</h2>
+                  <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum .</p>
+                  <a href="article.html">Read More</a>
+                </div>
+              </div>
+              </div>
+
+              <!--<div class="col-md-4">
+                  <img class="img-responsive img-thumbnail img-hover" src="http://placehold.it/700x450" alt="" width="700" height="450">
+              </div>
+              <div class="col-md-5">
+                  <h3><a herf="article.html">Which countries have liberal immigration rules?</a>
+                  </h3>
+                  <ul>
+                      <li><strong>Bootstrap v3.2.0</strong>
+                      </li>
+                      <li>jQuery v1.11.0</li>
+                      <li>Font Awesome v4.1.0</li>
+                      <li>Working PHP contact form with validation</li>
+                      <li>Unstyled page elements for easy customization</li>
+                      <li>17 HTML pages</li>
+                  </ul>
+                  <p>Anyone living in a developed country in 2016 that isn't insane or a religious "true believer" is effectively the same person.  They all love junk food, hate their jobs, want to murder their boss, and spend way too much time staring at their smartphones having vapid, pointless conversations on Whatsapp/WeChat.  Really, that's it, that's the modern world.</p>
+              </div>-->
+        </div>
+
+
+
+
+        <!-- Article Post Row 2-->
+        <div class="row">
+          <div class="col-lg-12 page-header"></div>
+            <div class="col-md-5">
+                <a href="article.html">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://marketingwithvladimir.com/blog/wp-content/uploads/2016/02/opt-in-now-600x300.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3><a href="article.html">Is the OPT STEM Extension Cancelled?</a>
+                </h3>
+                <p>by <a href="article.html">Team SKT</a>, February 27, 2016
+                </p>
+                <p>So, to sum up, in plain English: if the U.S. District Court for the District of Columbia doesn't give the DHS until <strong>May 10, 2016</strong> to sort through all the comments (50,000+ comments!) from the general public and all the stakeholders (including international students, college administrators, international student advisors, and immigration lawyers ), the STEM OPT Extension itself will be dead on February 13, 2016 -- stone cold dead -- for all the students who applied for, and have a pending, STEM Extension; or for all the students who plan on applying for the STEM Extension.
+                </p>
+                <a class="btn btn-primary" href="article.html">Read More</a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+      </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="services" class="services-section">
+
+    <div class="container">
+      <div id="diapoContainer">
+
+        <img class="imgsrc" src="images/1.png" >
+        <img class="imgsrc" src="images/2.jpg" >
+        <img class="imgsrc" src="images/3.png" >
+        <img class="imgsrc" src="images/4.jpg" >
+        <img class="imgsrc" src="images/5.jpg" >
+        <img class="imgsrc" src="images/6.jpg" >
+
+        <div id="bkgcaption"></div>
+		<div id="caption"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Scrolling Nav JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+    <script src="js/index.js"></script>
+	<script src="js/effect.js"></script>
+</body>
+</html>
